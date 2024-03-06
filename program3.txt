@@ -1,0 +1,19 @@
+%----------Program 3-----------
+
+%------------------------------
+
+lubi(jan,tatry).
+lubi(jan,beskidy).
+lubi(jerzy,beskidy).
+lubi(jerzy,bieszczady).
+lubi(adam,sudety).
+lubi(justyna,bieszczady).
+bratnia_dusza(X,Y):-lubi(X,G),lubi(Y,G),X\==Y.
+
+%-------------------------------
+
+% X\==Y, -X nie jest rowne Y
+% program składa się z 7  klauzul
+% ma 6 faktów i 1 regułę
+% ma 2 definicje relacji(lubi i bratnia dusza)
+
