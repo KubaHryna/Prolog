@@ -1,0 +1,15 @@
+%---------ZAD_4
+
+%------------------------------
+%mieszka(X,Y) - X mieszka na ulicy Y
+%sasiad(X,Y) - X jest sąsiadem Y
+mieszka(iza,dworcowa).
+mieszka(piotr,dworcowa).
+mieszka(pawel,dworcowa).
+mieszka(ania,poziomkowa).
+mieszka(kasia,poziomkowa).
+mieszka(ola,poziomkowa).
+mieszka(mariusz,U):-mieszka(pawel,U).
+sasiad(X,Y):-mieszka(X,G),mieszka(Y,G),X\==Y.
+
+%----------------------------------
